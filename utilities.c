@@ -35,7 +35,7 @@ int _addhexa(char ascii_code, char buffer[], int i)
 	buffer[i++] = 'x';
 
 	buffer[i++] = map_to[ascii_code / 16];
-	buffer[i] = map_to[ascii_code 16];
+	buffer[i] = map_to[ascii_code % 16];
 
 	return (3);
 }

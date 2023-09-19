@@ -45,20 +45,17 @@ int _printstring(va_list types, char buffer[],
 	UNUSED(width);
 	UNUSED(precision);
 	UNUSED(size);
-
 	if (str == NULL)
 	{
 		str = "(null)";
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[len] != '\0')
 		len++;
 
 	if (precision >= 0 && precision < len)
 		len = precision;
-
 	if (width > len)
 	{
 		if (flags & MINUS)
@@ -76,7 +73,6 @@ int _printstring(va_list types, char buffer[],
 			return (width);
 		}
 	}
-
 	return (write(1, str, len));
 }
 
@@ -171,7 +167,7 @@ int _printpointer(va_list types, char buffer[],
 
 	ind++;
 
-	return (write_pointer(buffer, ind, length,
+	return (_writepointer(buffer, ind, length,
 		width, flags, padding, excess, padd_start));
 }
 

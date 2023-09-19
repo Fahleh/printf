@@ -2,14 +2,14 @@
 
 /**
  * _printint - Prints integer values
- * 
+ *
  * @types: List of arguments
  * @buffer: Buffer array
  * @flags:  Flags
  * @width: Width.
  * @precision: Precision
  * @size: Size
- * 
+ *
  * Return: Number of printed characters
  */
 
@@ -37,7 +37,7 @@ int _printint(va_list types, char buffer[],
 
 	while (num > 0)
 	{
-		buffer[i--] = (num 10) + '0';
+		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
 
@@ -48,13 +48,14 @@ int _printint(va_list types, char buffer[],
 
 /**
  * _printunsigned - Prints an unsigned number
- * 
+ *
  * @types: List of arguments
  * @buffer: Buffer array
  * @flags:  Flags
  * @width: Width
  * @precision: Precision
  * @size: Size
+ *
  * Return: Number of printed characters.
  */
 
@@ -73,7 +74,7 @@ int _printunsigned(va_list types, char buffer[],
 
 	while (num > 0)
 	{
-		buffer[i--] = (num 10) + '0';
+		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
 
@@ -84,14 +85,14 @@ int _printunsigned(va_list types, char buffer[],
 
 /**
  * _printoctal - Prints an unsigned number in octal
- * 
+ *
  * @types: List of arguments
  * @buffer: Buffer array
  * @flags:  Flags
  * @width: Width
  * @precision: Precision
  * @size: Size
- * 
+ *
  * Return: Number of printed characters.
  */
 
@@ -114,7 +115,7 @@ int _printoctal(va_list types, char buffer[],
 
 	while (num > 0)
 	{
-		buffer[i--] = (num 8) + '0';
+		buffer[i--] = (num % 8) + '0';
 		num /= 8;
 	}
 
@@ -127,15 +128,14 @@ int _printoctal(va_list types, char buffer[],
 }
 
 /**
- * _printhexadecimal - Prints an unsigned number in hexadecimal
- * 
+ * _printhexadecimal - Prints an unsigned number in hexadecimal.
  * @types: List of arguments
  * @buffer: Buffer array
  * @flags:  Flags
  * @width: Width
  * @precision: Precision
  * @size: Size
- * 
+ *
  * Return: Number of printed characters
  */
 
