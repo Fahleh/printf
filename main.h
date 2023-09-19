@@ -18,6 +18,13 @@
 #define HASH 8
 #define SPACE 16
 
+/**
+ * struct flags - Struct op
+ *
+ * @flag: Flags
+ * @fn: Associated function
+ */
+
 struct flags
 {
 	char flag;
