@@ -111,6 +111,7 @@ int _getsize(const char *format, int *i)
  *
  * Return: width.
  */
+
 int _getwidth(const char *format, int *i, va_list list)
 {
 	int current_index;
