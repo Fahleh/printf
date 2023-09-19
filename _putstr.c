@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * _printf - Printf function
+ *
+ * @s: Character.
+ * @len: pointer
+ *
+ * Return: Printed chars.
+ */
+
 void	_putstr(char *s, int *len)
 {
 	if (s == NULL)

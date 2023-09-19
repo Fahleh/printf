@@ -1,5 +1,16 @@
 #include "main.h"
 
+
+/**
+ * check_flags - Flag checker
+ *
+ * @args: arguments
+ * @format: format.
+ * @len: Pointer
+ *
+ * Return: Printed chars.
+ */
+
 static void check_flags(va_list args, const char format, int *len)
 {
 	if (format == 'c')
@@ -9,6 +20,12 @@ static void check_flags(va_list args, const char format, int *len)
 	else if (format == '%')
 		_putchar(format, len);
 }
+
+/**
+ * _printf - Printf function
+ * @format: Format.
+ * Return: Printed chars.
+ */
 
 int	_printf(const char *format, ...)
 {
