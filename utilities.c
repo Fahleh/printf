@@ -2,7 +2,7 @@
 
 /**
  * is_printable - Checks if a char can be printed
- * 
+ *
  * @c: Char
  *
  * Return: 1 if c is printable, 0 otherwise
@@ -18,7 +18,7 @@ int is_printable(char c)
 
 /**
  * _addhexa - Adds ACII in hexadecimal
- * 
+ *
  * @buffer: Array of chars.
  * @i: Index at which to start appending.
  * @ascii_code: ASSCI CODE.
@@ -42,7 +42,7 @@ int _addhexa(char ascii_code, char buffer[], int i)
 
 /**
  * is_digit - Checks if a char is a digit
- * 
+ *
  * @c: Char
  *
  * Return: 1 if c is a digit, 0 otherwise
@@ -58,7 +58,7 @@ int is_digit(char c)
 
 /**
  * _convertsize_num - Converts a number to the specified size
- * 
+ *
  * @num: Number
  * @size: Size
  *
@@ -77,7 +77,7 @@ long int _convertsize_num(long int num, int size)
 
 /**
  * _convert_unsgnd - Converts a number to the specified size
- * 
+ *
  * @num: Number
  * @size: Number
  *

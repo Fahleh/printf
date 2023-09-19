@@ -14,10 +14,9 @@ int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size;
-  int buffer_index = 0;
+	int buffer_index = 0;
 	char buffer[BUFFER];
-
-  va_list list;
+	va_list list;
 
 	if (format == NULL)
 		return (-1);

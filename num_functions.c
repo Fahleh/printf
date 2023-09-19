@@ -148,14 +148,14 @@ int _printhexadecimal(va_list types, char buffer[],
 
 /**
  * _printhexa_upper - Prints an unsigned number in uppercase hexadecimal
- * 
+ *
  * @types: Listaof arguments
  * @buffer: Buffer array
  * @flags:  Flags
  * @width: Width
  * @precision: Precision
  * @size: Size
- * 
+ *
  * Return: Number of printed characters
  */
 
