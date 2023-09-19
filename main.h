@@ -31,44 +31,44 @@ int _printf(const char *format, ...);
 
 /* CHARACTER FUNCTIONS */
 int _putchar(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printstring(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printreverse(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _nonprintable(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printpointer(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 
 /* NUMBER FUNCTIONS */
 int _printint(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printunsigned(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printoctal(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printhexadecimal(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printhexa_upper(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 
 
 /* HANDLERS */
 int _writechar(char c, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _writenumber(int is_positive, int ind, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _writenum(int ind, char bff[], int flags, int width, int precision,
-	int length, char padding, char excess);
+		int length, char padding, char excess);
 int _writepointer(char buffer[], int ind, int length,
-	int width, int flags, char padding, char excess, int padd_start);
+		int width, int flags, char padding, char excess, int padd_start);
 int _writeunsgnd(int is_negative, int ind,
-char buffer[], int flags, int width, int precision, int size);
+		char buffer[], int flags, int width, int precision, int size);
 
 
- /* GETTERS */
+/* GETTERS */
 int _getflags(const char *format, int *i);
 int _getwidth(const char *format, int *i, va_list list);
 int _getprecision(const char *format, int *i, va_list list);
@@ -77,15 +77,15 @@ int _getsize(const char *format, int *i);
 
 /* HELPERS */
 int _printhexa(va_list types, char map_to[],
-  char buffer[], int flags, char flag_ch, int width, int precision, int size);
+		char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int _printpercent(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printrot13(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _printbinary(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int _handleprint(const char *fmt, int *i,
-  va_list list, char buffer[], int flags, int width, int precision, int size);
+		va_list list, char buffer[], int flags, int width, int precision, int size);
 
 
 /* UTILITIES */

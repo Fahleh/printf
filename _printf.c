@@ -14,10 +14,10 @@ int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size;
-  int buffer_index = 0;
+	int buffer_index = 0;
 	char buffer[BUFFER];
 
-  va_list list;
+	va_list list;
 
 	if (format == NULL)
 		return (-1);
@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			size = _getsize(format, &i);
 			++i;
 			printed = _handleprint(format, &i, list, buffer,
-				flags, width, precision, size);
+					flags, width, precision, size);
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
