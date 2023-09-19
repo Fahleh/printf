@@ -2,7 +2,7 @@
 
 
 /**
- * check_flags - Flag checker
+ * check_tags - Tag checker
  *
  * @args: arguments
  * @format: format.
@@ -11,7 +11,7 @@
  * Return: Printed chars.
  */
 
-static void check_flags(va_list args, const char format, int *len)
+static void check_tags(va_list args, const char format, int *len)
 {
 	if (format == 'c')
 		_putchar((char)va_arg(args, int), len);
@@ -27,10 +27,10 @@ static void check_flags(va_list args, const char format, int *len)
  * Return: Printed chars.
  */
 
-int	_printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list	args;
-	int		len;
+	int len;
 
 	len = 0;
 	va_start(args, format);
@@ -39,7 +39,7 @@ int	_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			check_flags(args, *format, &len);
+			check_tags(args, *format, &len);
 		}
 		else
 			_putchar(*format, &len);

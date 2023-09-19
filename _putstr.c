@@ -9,7 +9,7 @@
  * Return: Printed chars.
  */
 
-void	_putstr(char *s, int *len)
+void _putstr(char *s, int *len)
 {
 	if (s == NULL)
 		_putstr("(null)", len);
